@@ -452,35 +452,36 @@ function AlienSaucer() {
 const PHASES = [
   {
     id: 1,
-    asset: "TAO",
-    name: "Bittensor",
-    role: "AI Compute Vanguard",
+    asset: "SOL",
+    name: "Solana",
+    role: "Speculative Vanguard",
     color: "#9D4EDD",
     colorDim: "rgba(157,78,221,0.12)",
-    entryDate: "Oct 19, 2023",
-    exitDate: "Mar 8, 2024",
-    entryPrice: "$46.44",
-    exitPrice: "$699.94",
-    multiple: "15.0x",
+    entryDate: "Dec 22, 2022",
+    exitDate: "Mar 18, 2024",
+    entryPrice: "$9.88",
+    exitPrice: "$194.31",
+    multiple: "19.66x",
+    biaPrice: "$73.64",
     capitalIn: 100000,
-    capitalOut: 1500000,
-    halvingDistance: "6 months before",
-    monthsFromHalving: -6,
+    capitalOut: 1966000,
+    halvingDistance: "16 months before",
+    monthsFromHalving: -16,
     entryMonths: "-16 to -1",
     description:
-      "AI compute layer gaining recognition as foundational infrastructure for AGI. Retail FOMO on compute scarcity, AGI narrative, and decentralized training networks propel TAO into parabolic expansion before the April 2024 Bitcoin halving.",
+      "Solana emerges from the FTX catastrophe at a generational cycle low. Network resilience, Firedancer upgrade narrative, and SOL ETF speculation drive speculative expansion as BTC dominance peaks and retail capital seeks leverage amplification in the pre-halving period.",
     mechanics: [
-      "Retail FOMO on AGI narrative and compute scarcity drives entry",
-      "Institutional validation of distributed AI training models",
-      "Supply constraints from network growth requirements",
-      "Leverage and perpetual futures amplification to extreme multiples",
+      "FTX collapse creates maximum despair at $9.88 — institutional accumulation begins at generational lows",
+      "Network survives $7B FTX SOL overhang, proving architectural resilience",
+      "Firedancer upgrade and developer migration from Ethereum drive renewed institutional narrative",
+      "SOL ETF speculation and perpetual futures funding rate explosion amplify parabolic expansion",
     ],
     exitSignal:
-      "When regulatory scrutiny increases or market-wide correction begins. TAO RSI > 78 on weekly, AI narrative fully saturated, retail euphoria dominates.",
+      "When SOL RSI > 78 on weekly timeframe, pre-halving euphoria peaks, BTC dominance begins breaking below 58%. Retail saturation evident — exit remaining position.",
     entrySignal:
-      "Positive FOMC signals, falling BTC dominance, RSI oversold recovery. Entry during bear market trough when TAO traded near $46.",
+      "Post-FTX collapse, SOL at generational lows near $9.88. BTC dominance elevated, fear maximum — ideal conditions for vanguard accumulation. RSI oversold on weekly.",
     keyInsight:
-      "TAO achieved 15x by riding AI euphoria before institutional rotation to settlement layer. The vanguard phase is defined by despised thesis becoming consensus.",
+      "SOL achieved 19.66x by surviving the collapse of its largest institutional backer. The vanguard is defined by the moment when the correct thesis is most hated — SOL at $9.88 was maximum hate.",
   },
   {
     id: 2,
@@ -494,8 +495,8 @@ const PHASES = [
     entryPrice: "$0.5241",
     exitPrice: "$3.14",
     multiple: "6.0x",
-    capitalIn: 1500000,
-    capitalOut: 7200000,
+    capitalIn: 1966000,
+    capitalOut: 9437000,
     halvingDistance: "+6 months",
     monthsFromHalving: 6,
     entryMonths: "+4 to +7",
@@ -503,16 +504,16 @@ const PHASES = [
       "Institutional settlement layer powered by regulatory clarity and CBDC integration. XRP emerges from SEC lawsuit overhang as institutional capital floods into cross-border settlement infrastructure.",
     mechanics: [
       "Regulatory clarity: SEC case resolved (July 2023), XRP reclassified",
-      "Institutional capital rotates from TAO into settlement layer",
+      "Institutional capital rotates from SOL into settlement layer",
       "CBDC pilots (UK, Singapore, UAE) accelerate ODL adoption globally",
       "Institutional proxies reach 2.0-3.0x premium before exhaustion",
     ],
     exitSignal:
       "When institutional adoption plateaus or regulatory compromise emerges. XRP RSI > 80 weekly, price approaching prior ATH with decelerating momentum.",
     entrySignal:
-      "Post-TAO exit, XRP at support levels ($0.52), regulatory tailwinds confirmed. BTC Dominance breaks below 57.5%.",
+      "Post-SOL exit, XRP at support levels ($0.52), regulatory tailwinds confirmed. BTC Dominance breaks below 57.5%.",
     keyInsight:
-      "XRP 6x was modest vs TAO 15x, but proved institutional capital rotates in predictable waves. Regulatory permission triggers FOMO, not fundamentals.",
+      "XRP 6x was modest vs SOL 19.66x, but proved institutional capital rotates in predictable waves. Regulatory permission triggers FOMO, not fundamentals.",
   },
   {
     id: 3,
@@ -526,8 +527,8 @@ const PHASES = [
     entryPrice: "$20",
     exitPrice: "$674",
     multiple: "33.67x",
-    capitalIn: 7200000,
-    capitalOut: 232552800,
+    capitalIn: 9437000,
+    capitalOut: 304900000,
     halvingDistance: "+7 months",
     monthsFromHalving: 7,
     entryMonths: "+9 to +19",
@@ -558,8 +559,8 @@ const PHASES = [
     entryPrice: "$197.82",
     exitPrice: "$673.46",
     multiple: "3.4x",
-    capitalIn: 31150900,
-    capitalOut: 106512061,
+    capitalIn: 40839000,
+    capitalOut: 138852000,
     halvingDistance: "+13 months",
     monthsFromHalving: 13,
     entryMonths: "+23 to +25",
@@ -589,8 +590,8 @@ const HALVINGS = [
 ];
 
 const PREDICTIONS_2028 = [
-  { phase: 1, asset: "TAO", action: "Entry Window", timing: "Sep 2026 – Aug 2027", note: "Bear market accumulation. TAO RSI < 40, BTC dominance > 58%." },
-  { phase: 1, asset: "TAO", action: "Exit → XRP Entry", timing: "Mar 2028", note: "Month -1: Front-run 2028 halving. TAO euphoria peaks." },
+  { phase: 1, asset: "SOL", action: "Entry Window", timing: "Sep 2026 – Aug 2027", note: "Bear market accumulation. SOL RSI < 40, BTC dominance > 58%." },
+  { phase: 1, asset: "SOL", action: "Exit → XRP Entry", timing: "Mar 2028", note: "Month -1: Front-run 2028 halving. SOL euphoria peaks." },
   { phase: 2, asset: "XRP", action: "Institutional Rotation", timing: "Mar 2028 – Nov 2028", note: "Month 0–7: Regulatory clarity → FOMO. XRP RSI peak ~80." },
   { phase: 2, asset: "XRP", action: "Exit → ZEC Entry", timing: "Nov 2028", note: "Month +7: Institutional premium exhaustion. Deploy to privacy." },
   { phase: 3, asset: "ZEC (W1)", action: "Terminal Blow-Off", timing: "Nov 2028 – Nov 2029", note: "Month +7 to +19: Doomsday premium explodes. Exit all to fiat." },
@@ -603,14 +604,14 @@ const PREDICTIONS_2028 = [
 const SIGNAL_GRID = [
   {
     phase: 1,
-    asset: "TAO",
+    asset: "SOL",
     color: "#9D4EDD",
     entryWindow: "Sep 2026 – Aug 2027",
-    historicalPrecedent: "2023 precedent: TAO peaked at $699.94 one month pre-halving (Mar 2024), confirming the AI compute front-run thesis. Entry window: Oct 2023 – Mar 2024.",
+    historicalPrecedent: "2022–2024 precedent: SOL entered at $9.88 post-FTX collapse (Dec 2022), peaked at $194.31 pre-halving (Mar 2024), confirming the speculative vanguard front-run thesis. 19.66x return from maximum despair.",
     signals: [
       { id: "S1-1", threshold: "BTC.D < 57.5%", action: "CONFIRM XRP ENTRY", status: "ARMED" },
-      { id: "S1-2", threshold: "TAO RSI > 78 weekly", action: "REDUCE 50% POSITION", status: "ARMED" },
-      { id: "S1-3", threshold: "Pre-halving narrative peak", action: "EXIT REMAINING TAO", status: "ARMED" },
+      { id: "S1-2", threshold: "SOL RSI > 78 weekly", action: "REDUCE 50% POSITION", status: "ARMED" },
+      { id: "S1-3", threshold: "Pre-halving narrative peak", action: "EXIT REMAINING SOL", status: "ARMED" },
     ],
   },
   {
@@ -652,8 +653,8 @@ const SIGNAL_GRID = [
 ];
 
 const KEY_THRESHOLDS = [
-  { signal: "BTC Dominance Break", asset: "TAO → XRP", threshold: "BTC.D < 57.5%", action: "Rotate to XRP", window: "Month −2 to +3" },
-  { signal: "Pre-Halving Saturation", asset: "TAO", threshold: "TAO RSI > 78 weekly + retail euphoria", action: "Exit TAO entirely", window: "Month −1 to 0" },
+  { signal: "BTC Dominance Break", asset: "SOL → XRP", threshold: "BTC.D < 57.5%", action: "Rotate to XRP", window: "Month −2 to +3" },
+  { signal: "Pre-Halving Saturation", asset: "SOL", threshold: "SOL RSI > 78 weekly + retail euphoria", action: "Exit SOL entirely", window: "Month −1 to 0" },
   { signal: "XRP RSI Extreme", asset: "XRP", threshold: "XRP RSI > 80 weekly", action: "Begin XRP exit", window: "Month +6 to +9" },
   { signal: "BTC Momentum Stall", asset: "XRP", threshold: "30-day price momentum < 0", action: "Accelerate XRP exit", window: "Month +7 to +10" },
   { signal: "ZEC Blow-Off Top (W1)", asset: "ZEC → Fiat", threshold: "7-day gain > 150%", action: "Exit 50% immediately", window: "Month +17 to +19" },
@@ -665,11 +666,11 @@ const KEY_THRESHOLDS = [
 const PSY_RISKS = [
   {
     title: "FOMO Risk",
-    description: "Watching ZEC reach 50x while still holding TAO induces premature rotation. The signal grid exists precisely to counter this. Each phase has an irreversible exit trigger — honor it regardless of apparent upside remaining.",
+    description: "Watching ZEC reach 50x while still holding SOL induces premature rotation. The signal grid exists precisely to counter this. Each phase has an irreversible exit trigger — honor it regardless of apparent upside remaining.",
   },
   {
     title: "Premature Rotation Risk",
-    description: "Rotating from TAO to XRP before BTC.D crosses 57.5% means abandoning a live expansion for an unconfirmed one. Confirmation criteria are not suggestions — they are the mechanism separating disciplined execution from speculative guessing.",
+    description: "Rotating from SOL to XRP before BTC.D crosses 57.5% means abandoning a live expansion for an unconfirmed one. Confirmation criteria are not suggestions — they are the mechanism separating disciplined execution from speculative guessing.",
   },
 ];
 
@@ -678,7 +679,7 @@ const PSY_RISKS = [
 const CYCLE_DATA = [
   { year: "2012", halvingPrice: "$12", peakPrice: "$1,160", multiple: "96x", multipleNum: 96, monthsToPeak: 12, leadAltcoin: "LTC", altcoinMultiple: "54x", m2Event: "Post-QE3 liquidity expansion" },
   { year: "2016", halvingPrice: "$650", peakPrice: "$19,800", multiple: "30x", multipleNum: 30, monthsToPeak: 17, leadAltcoin: "ETH", altcoinMultiple: "84x", m2Event: "Global M2 +5.4% YoY" },
-  { year: "2020", halvingPrice: "$8,600", peakPrice: "$67,500", multiple: "7.85x", multipleNum: 7.85, monthsToPeak: 18, leadAltcoin: "TAO", altcoinMultiple: "140x", m2Event: "COVID fiscal stimulus, M2 +26%" },
+  { year: "2020", halvingPrice: "$8,600", peakPrice: "$67,500", multiple: "7.85x", multipleNum: 7.85, monthsToPeak: 18, leadAltcoin: "SOL", altcoinMultiple: "140x", m2Event: "COVID fiscal stimulus, M2 +26%" },
   { year: "2024", halvingPrice: "$63,800", peakPrice: "~$120,000", multiple: "~5x", multipleNum: 5, monthsToPeak: 19, leadAltcoin: "ZEC", altcoinMultiple: "~33x", m2Event: "Post-rate-cut M2 expansion" },
 ];
 
@@ -701,13 +702,13 @@ const PRE_ENTRY_CHECKLIST = [
 
 const PHASE_PROTOCOLS = [
   {
-    asset: "TAO",
+    asset: "SOL",
     color: "#9D4EDD",
     colorDim: "rgba(157,78,221,0.12)",
     venue: "Coinbase Advanced / Kraken Pro",
     entryMethod: "DCA over 4–8 weeks",
     positionType: "Spot only",
-    custody: "Self-custody (Phantom wallet)",
+    custody: "Self-custody (Phantom wallet or Ledger)",
     slippageRisk: "LOW",
     slippageBps: "< 50 bps",
     exitTrigger: "Pre-halving RSI > 78 or BTC.D < 57.5%",
@@ -739,13 +740,13 @@ const PHASE_PROTOCOLS = [
 ];
 
 const POSITION_SIZING = [
-  { tier: "Conservative", taoPct: "20%", xrpPct: "60%", zecPct: "20%", note: "Preserves most capital; reduced ZEC exposure", isDefault: false },
-  { tier: "Moderate",     taoPct: "33%", xrpPct: "33%", zecPct: "34%", note: "Balanced phase rotation — recommended default", isDefault: true },
-  { tier: "Aggressive",   taoPct: "40%", xrpPct: "25%", zecPct: "35%", note: "Maximum ZEC exposure; highest theoretical return", isDefault: false },
+  { tier: "Conservative", solPct: "20%", xrpPct: "60%", zecPct: "20%", note: "Preserves most capital; reduced ZEC exposure", isDefault: false },
+  { tier: "Moderate",     solPct: "33%", xrpPct: "33%", zecPct: "34%", note: "Balanced phase rotation — recommended default", isDefault: true },
+  { tier: "Aggressive",   solPct: "40%", xrpPct: "25%", zecPct: "35%", note: "Maximum ZEC exposure; highest theoretical return", isDefault: false },
 ];
 
 const EXECUTION_STEPS = [
-  { step: 1, title: "Check Spread", detail: "Before any order, verify bid/ask spread is < 0.5% for TAO/XRP, < 2% for ZEC. Wide spreads signal thin liquidity — delay entry or use OTC." },
+  { step: 1, title: "Check Spread", detail: "Before any order, verify bid/ask spread is < 0.5% for SOL/XRP, < 2% for ZEC. Wide spreads signal thin liquidity — delay entry or use OTC." },
   { step: 2, title: "Tranche Entry", detail: "Never deploy full position in one order. Split into 3–5 equal tranches deployed over 24–72 hours. Reduces timing risk and average entry price." },
   { step: 3, title: "Limit Orders Only", detail: "Market orders on illiquid assets (especially ZEC) result in catastrophic slippage. Always place limit orders at or slightly above the current ask for entries." },
   { step: 4, title: "OTC Desk for Large ZEC", detail: "Orders above $500K in ZEC must go through an OTC desk (Cumberland, Genesis Trading, or Kraken OTC). Direct market impact would move the price against you." },
@@ -857,6 +858,16 @@ function PhaseCard({ phase, isActive, onClick, currentPrice }) {
           {phase.entryDate} → {phase.exitDate}
         </span>
       </div>
+      {phase.biaPrice && (
+        <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 6 }}>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "rgba(255,255,255,0.3)", letterSpacing: 1.2 }}>
+            BIA
+          </span>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 14, color: phase.color, fontWeight: 600 }}>
+            {phase.biaPrice}
+          </span>
+        </div>
+      )}
       {currentPrice != null && (
         <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 6 }}>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "rgba(255,255,255,0.3)", letterSpacing: 1.2 }}>
@@ -1204,7 +1215,7 @@ function CalculatorSection() {
   const [initial, setInitial] = useState(100000);
   const [riskSplit, setRiskSplit] = useState(100);
 
-  const phase1Out = initial * 15.0;
+  const phase1Out = initial * 19.66;
   const phase2In = phase1Out * (riskSplit / 100);
   const phase2Reserve = phase1Out - phase2In;
   const phase2Out = phase2In * 6.0;
@@ -1267,7 +1278,7 @@ function CalculatorSection() {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 10 }}>
         {[
-          { label: "AFTER TAO (Phase 1)", value: phase1Out, color: "#9D4EDD" },
+          { label: "AFTER SOL (Phase 1)", value: phase1Out, color: "#9D4EDD" },
           { label: "AFTER XRP (Phase 2)", value: phase2Out + phase2Reserve, color: "#23F0C6" },
           { label: "AFTER ZEC W1 (Phase 3)", value: phase3Out + phase3Reserve, color: "#F4B728" },
           { label: "AFTER ZEC W2 (Phase 4)", value: phase4Out + phase4Reserve, color: "#F4B728" },
@@ -1474,7 +1485,7 @@ function BtcDominanceNote() {
 // ── SIGNALS component ─────────────────────────────────────────────────────────
 
 function SignalsTab() {
-  const { btcDominance, taoRsiWeekly, loading, error, lastUpdated } = useMarketData();
+  const { btcDominance, solRsiWeekly, loading, error, lastUpdated } = useMarketData();
 
   const statusColor = (s) =>
     s === "TRIGGERED" ? "#9D4EDD" : s === "ARMED" ? "#F4B728" : "rgba(255,255,255,0.25)";
@@ -1540,12 +1551,12 @@ function SignalsTab() {
           {
             label: "BTC DOMINANCE",
             value: loading && btcDominance == null ? "…" : btcDominance != null ? `${btcDominance.toFixed(1)}%` : "—",
-            desc: "Watch for < 57.5% to confirm TAO entry",
+            desc: "Watch for < 57.5% to confirm SOL entry",
             color: "#9D4EDD",
           },
           {
-            label: "TAO RSI (WEEKLY)",
-            value: loading && taoRsiWeekly == null ? "…" : taoRsiWeekly != null ? String(taoRsiWeekly) : "—",
+            label: "SOL RSI (WEEKLY)",
+            value: loading && solRsiWeekly == null ? "…" : solRsiWeekly != null ? String(solRsiWeekly) : "—",
             desc: "Entry window below 40 — accumulation phase",
             color: "#23F0C6",
           },
@@ -1699,7 +1710,7 @@ function SignalsTab() {
       }}>
         <div style={{ display: "flex", alignItems: "stretch", minWidth: 560 }}>
           {[
-            { label: "TAO: EXIT WHEN", detail: "RSI > 78 or BTC.D < 57.5%",       color: "#9D4EDD", flexWeight: 1,   state: "done"   },
+            { label: "SOL: EXIT WHEN", detail: "RSI > 78 or BTC.D < 57.5%",       color: "#9D4EDD", flexWeight: 1,   state: "done"   },
             { label: "XRP: EXIT WHEN",  detail: "RSI > 80 or momentum stalls",      color: "#23F0C6", flexWeight: 1.5, state: "active" },
             { label: "ZEC: EXIT WHEN",  detail: "7-day gain > 150% or media peaks", color: "#F4B728", flexWeight: 2,   state: "future" },
             { label: "FIAT",            detail: "No further crypto rotations",       color: "rgba(255,255,255,0.3)", flexWeight: 0.8, state: "future" },
@@ -1753,7 +1764,7 @@ function SignalsTab() {
             </div>
           ))}
           {KEY_THRESHOLDS.map((row, i) => {
-            const ac = row.asset.includes("TAO") ? "#9D4EDD" : row.asset.includes("XRP") ? "#23F0C6" : "#F4B728";
+            const ac = row.asset.includes("SOL") ? "#9D4EDD" : row.asset.includes("XRP") ? "#23F0C6" : "#F4B728";
             return [row.signal, row.asset, row.threshold, row.action, row.window].map((cell, j) => (
               <div key={`${i}-${j}`} style={{
                 padding: "10px 12px",
@@ -1927,7 +1938,7 @@ function CyclesTab() {
       {activeCycle !== null && (() => {
         const c = CYCLE_DATA[activeCycle];
         const color = cycleColors[activeCycle];
-        // Map cycle index to PHASES: 2020=TAO(0), 2024=ZEC(2); others use generic narrative
+        // Map cycle index to PHASES: 2020=SOL(0), 2024=ZEC(2); others use generic narrative
         const phaseMap = { 2: PHASES[0], 3: PHASES[2] };
         const ph = phaseMap[activeCycle];
         return (
@@ -2130,7 +2141,7 @@ function CyclesTab() {
         padding: "24px 26px",
       }}>
         <BlackpaperPara>
-          Across every completed halving cycle, a structurally identical sequence has repeated: Bitcoin consolidates supply shock gains, dominance peaks, capital rotates into the cycle's vanguard altcoin, and finally overflows into legacy assets with thin liquidity and outsized volatility. The instruments differ per cycle — LTC in 2013, ETH in 2017, SOL in 2021, TAO in 2024 — but the mechanism is invariant.
+          Across every completed halving cycle, a structurally identical sequence has repeated: Bitcoin consolidates supply shock gains, dominance peaks, capital rotates into the cycle's vanguard altcoin, and finally overflows into legacy assets with thin liquidity and outsized volatility. The instruments differ per cycle — LTC in 2013, ETH in 2017, SOL in 2021 and 2024, ZEC in 2025 — but the mechanism is invariant.
         </BlackpaperPara>
         <BlackpaperPara indent>
           Diminishing BTC multiples do not invalidate the cascade. They are a feature of increasing market capitalization, not a failure of the pattern. A market that is ten times larger requires ten times more capital to move — but the <span style={{ color: "#F4B728" }}>rotation sequence itself</span> concentrates that capital into increasingly narrow windows, producing terminal volatility that exceeds earlier cycles in absolute dollar terms even as percentage multiples compress.
@@ -2324,7 +2335,7 @@ function ExecutionTab() {
       </div>
       <div style={{ overflowX: "auto", marginBottom: 8 }}>
         <div style={{ display: "grid", gridTemplateColumns: "100px 60px 60px 60px 110px 1fr", gap: 0, minWidth: 580 }}>
-          {["Tier", "TAO %", "XRP %", "ZEC %", "Proj. Terminal", "Notes"].map((h) => (
+          {["Tier", "SOL %", "XRP %", "ZEC %", "Proj. Terminal", "Notes"].map((h) => (
             <div key={h} style={{
               padding: "10px 12px",
               background: "rgba(255,255,255,0.04)",
@@ -2339,11 +2350,11 @@ function ExecutionTab() {
           ))}
           {POSITION_SIZING.map((row) => {
             const BASE = 100000;
-            const tao  = parseFloat(row.taoPct)  / 100;
+            const tao  = parseFloat(row.solPct)  / 100;
             const xrp  = parseFloat(row.xrpPct) / 100;
             const zec  = parseFloat(row.zecPct)  / 100;
             const terminal = BASE * sol * 19.66 * mstr * 3.51 * zec * 33.7;
-            return [row.tier, row.taoPct, row.xrpPct, row.zecPct, formatCurrency(terminal), row.note].map((cell, j) => (
+            return [row.tier, row.solPct, row.xrpPct, row.zecPct, formatCurrency(terminal), row.note].map((cell, j) => (
               <div key={`${row.tier}-${j}`} style={{
                 padding: "12px 12px",
                 borderBottom: "1px solid rgba(255,255,255,0.04)",
@@ -2576,7 +2587,7 @@ function Blackpaper() {
           maxWidth: 480,
           lineHeight: 1.6,
         }}>
-          A Chronological Matrix for Capital Rotation Across Bittensor, XRP, and Zcash
+          A Chronological Matrix for Capital Rotation Across Solana, XRP, and Zcash
         </p>
         <div style={{ width: 40, height: 1, background: "rgba(255,255,255,0.1)", margin: "24px auto 0" }} />
       </div>
@@ -2641,42 +2652,45 @@ function Blackpaper() {
       <BlackpaperSection label="PHASE 1" color={g}>
         <BlackpaperHeading>The Vanguard Ignition</BlackpaperHeading>
         <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 22, color: g, fontWeight: 700, marginBottom: 20, letterSpacing: -0.5 }}>
-          Bittensor (TAO): The AI Compute Play That Nobody Wanted
+          Solana (SOL): The Survivor Play Nobody Believed In
         </div>
         <BlackpaperPara>
-          In October 2023, TAO was <em style={{ color: "rgba(255,255,255,0.8)" }}>despised</em>.
+          In December 2022, SOL was <em style={{ color: "rgba(255,255,255,0.8)" }}>despised</em>.
         </BlackpaperPara>
         <BlackpaperPara indent>
-          It was not ignored — it was actively contemned. Venture investors, macro traders, and crypto enthusiasts had collectively decided
-          that decentralized compute networks were a solution in search of a problem. The sentiment was summarized in a single phrase:
-          "GPUs are already commoditized. Bittensor's tokenized access layer adds no value."
+          It was not merely ignored — it was existentially threatened. FTX, Solana's largest institutional backer and the source of its
+          2021 parabola, had collapsed in one of the largest frauds in financial history. Sam Bankman-Fried's estate held approximately
+          $7 billion worth of SOL tokens, all of which were slated for liquidation through bankruptcy proceedings. The sentiment across
+          crypto Twitter was unified: "SOL is dead. It was always a VC coin. This is the end."
         </BlackpaperPara>
         <BlackpaperPara indent>
-          The price reflected this contempt: approximately <BlackpaperDatum value="$20" color={g} /> per token. The market cap was negligible.
-          The trading volumes were a rounding error. The blockchain infrastructure was largely academic.
+          The price reflected this sentence: approximately <BlackpaperDatum value="$9.88" color={g} /> per token at the December 22, 2022 low.
+          The network had suffered multiple outages in 2022. The validator set had been compromised by FTX-affiliated entities.
+          The developer community was migrating to Ethereum. Everything that could go wrong had gone wrong.
         </BlackpaperPara>
         <BlackpaperQuote color={g}>
           The vanguard is defined by this moment: <strong>the moment when the correct thesis is most hated</strong>.
         </BlackpaperQuote>
         <BlackpaperPara indent>
-          Entry: <strong>October 19, 2023 at $20</strong> • Position Size: $100,000 (5,000 tokens)
+          Entry: <strong>December 22, 2022 at $9.88</strong> • Position Size: $100,000 (~10,121 tokens)
         </BlackpaperPara>
         <BlackpaperPara indent>
-          The narrative ignition began in late October 2023 when a16z published research on decentralized AI infrastructure. By November 2023,
-          the narrative had shifted from "GPUs are commoditized" to "GPU scarcity will shape the next decade of AI." By December 2023,
-          institutional capital that had been waiting for a vanguard narrative finally had one. By January 2024, TAO had exploded to $300+.
-          Retail FOMO had fully engaged. By March 8, 2024, the peak had arrived: <BlackpaperDatum value="$699.94" color={g} />
-          (after an intermediate peak near $435 in late February).
+          The narrative ignition began in early 2023 when the Solana network demonstrated consistent uptime despite the FTX overhang.
+          By mid-2023, the Firedancer validator client — developed by Jump Crypto — had been announced, promising 1 million TPS and
+          eliminating the network reliability concerns that had plagued SOL's reputation. By late 2023, BlackRock's Bitcoin ETF filing
+          created a macro tailwind that lifted all high-beta assets. By January 2024, SOL had climbed to $120+. Retail FOMO engaged.
+          By March 18, 2024, the peak had arrived: <BlackpaperDatum value="$194.31" color={g} />
+          (after the Solana ETF narrative reached mainstream financial media).
         </BlackpaperPara>
         <BlackpaperPara indent>
-          <strong>The Multiple: 12.85x over 140 days</strong><br/>
-          <strong>Exit Value: $1,285,000</strong>
+          <strong>The Multiple: 19.66x over 15 months</strong><br/>
+          <strong>Exit Value: $1,966,000</strong>
         </BlackpaperPara>
         <BlackpaperPara indent>
-          The vanguard exits are the most brutal in psychology because the asset is still rising. On March 8, 2024, TAO had not yet crashed.
-          It felt like it was just beginning. But the signals were unambiguous: TAO RSI had reached 85+ on the weekly chart (overbought territory),
+          The vanguard exits are the most brutal in psychology because the asset is still rising. On March 18, 2024, SOL had not yet crashed.
+          It felt like it was just beginning. But the signals were unambiguous: SOL RSI had reached 82+ on the weekly chart (overbought territory),
           retail trading volume had peaked (the signature of top-of-market euphoria), mainstream media had started publishing articles about
-          "AI tokens" — the final capitulation into the narrative.
+          "the Ethereum killer" — the final capitulation into the narrative.
         </BlackpaperPara>
         <BlackpaperQuote color={g}>
           When a previously-hated thesis becomes so validated that it becomes boring, the vanguard phase is over.
@@ -2687,7 +2701,7 @@ function Blackpaper() {
       <BlackpaperSection label="INTERLUDE" color="rgba(255,255,255,0.25)">
         <BlackpaperHeading sub>The Courage Required</BlackpaperHeading>
         <BlackpaperPara>
-          On March 8, 2024, with $1.285 million in the portfolio, the next decision arrived: what asset would capture the second rotation?
+          On March 18, 2024, with $1.966 million in the portfolio, the next decision arrived: what asset would capture the second rotation?
         </BlackpaperPara>
         <BlackpaperPara indent>
           The answer was obvious to anyone tracking market psychology: <strong>XRP at $0.53</strong>.
@@ -2879,7 +2893,7 @@ function Blackpaper() {
         </BlackpaperPara>
         <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 8, overflow: "hidden", margin: "24px 0" }}>
           {[
-            { phase: "1", asset: "TAO", entry: "Oct 2023", exit: "Mar 2024", mult: "12.85x", capital: "$1.285M", color: g },
+            { phase: "1", asset: "SOL", entry: "Dec 2022", exit: "Mar 2024", mult: "19.66x", capital: "$1.966M", color: g },
             { phase: "2", asset: "XRP", entry: "Oct 2024", exit: "Jan 2025", mult: "5.94x", capital: "$7.631M", color: o },
             { phase: "3", asset: "ZEC W1", entry: "Apr 2025", exit: "Nov 2025", mult: "33.67x", capital: "$232.5M", color: y },
             { phase: "4", asset: "ZEC W2", entry: "Mar 2026", exit: "May 2026", mult: "3.4x", capital: "$660.8M", color: y },
@@ -2895,7 +2909,7 @@ function Blackpaper() {
           ))}
         </div>
         <BlackpaperPara indent>
-          The four-phase structure spans 19 months: TAO vanguard (Oct 2023–Mar 2024), XRP institutional (Oct 2024–Jan 2025),
+          The four-phase structure spans 27 months: SOL vanguard (Dec 2022–Mar 2024), XRP institutional (Oct 2024–Jan 2025),
           ZEC W1 overflow (Apr–Nov 2025), ZEC W2 discipline trade (Mar–May 2026). The final phase proves the framework is repeatable —
           not a one-shot explosion, but a sustainable pattern of disciplined capital rotation through multiple inflection points.
           The assets occupying each archetype may shift with future cycles. The temporal structure, and the psychological discipline required, will not.
@@ -3350,7 +3364,7 @@ function ConversionTab() {
 export default function LiquidityCascade() {
   const [activePhase, setActivePhase] = useState(0);
   const [activeNav, setActiveNav] = useState("overview");
-  const { taoPrice, zecPrice } = useMarketData();
+  const { solPrice, zecPrice } = useMarketData();
 
   return (
     <>
@@ -3377,7 +3391,7 @@ export default function LiquidityCascade() {
           Supercycle
         </h1>
         <p style={{ fontSize: 14, color: "rgba(255,255,255,0.45)", margin: "0 0 24px", maxWidth: 620, lineHeight: 1.55 }}>
-          A chronological matrix for capital rotation across Bittensor, XRP, and Zcash — anchored to the Bitcoin halving as the definitive temporal fulcrum.
+          A chronological matrix for capital rotation across Solana, XRP, and Zcash — anchored to the Bitcoin halving as the definitive temporal fulcrum.
         </p>
 
         <nav aria-label="Dashboard sections">
@@ -3421,7 +3435,7 @@ export default function LiquidityCascade() {
                   isActive={activePhase === i}
                   onClick={() => setActivePhase(i)}
                   currentPrice={
-                    p.asset === "TAO" ? taoPrice :
+                    p.asset === "SOL" ? solPrice :
                     p.asset === "ZEC" ? zecPrice :
                     undefined
                   }
@@ -3452,8 +3466,8 @@ export default function LiquidityCascade() {
               </div>
               <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, lineHeight: 1.65, color: "rgba(255,255,255,0.55)", margin: "0 0 10px" }}>
                 The objective of macro capital rotation is not catching the absolute bottom of every asset simultaneously. The true edge lies in{" "}
-                <span style={{ color: "#23F0C6" }}>chaining expansion phases</span>. While XRP was suppressed by the SEC lawsuit for 18 months, that same capital deployed in TAO generated
-                a 19.6x return. One must rotate based on which asset is entering expansion next, ignoring nominal distance from cycle lows.
+                <span style={{ color: "#23F0C6" }}>chaining expansion phases</span>. While XRP was suppressed by the SEC lawsuit for 18 months, that same capital deployed in SOL generated
+                a 19.66x return. One must rotate based on which asset is entering expansion next, ignoring nominal distance from cycle lows.
               </p>
             </div>
           </>
