@@ -2609,7 +2609,7 @@ function Blackpaper() {
           their way into the final overflow before the inevitable collapse.
         </BlackpaperPara>
         <BlackpaperQuote color="rgba(255,60,60,0.6)">
-          The Supercycle is a record of three consecutive moments when this machinery engaged. Three times, we recognized the inflection point.
+          The Alpha Hybrid is a record of three consecutive moments when this machinery engaged. Three times, we recognized the inflection point.
           Three times, we moved capital forward. Three times, we exited before the music stopped.
         </BlackpaperQuote>
       </BlackpaperSection>
@@ -2630,14 +2630,14 @@ function Blackpaper() {
           Not because the new asset is actually better — but because it's the only playground left where outsized returns are still possible.
         </BlackpaperPara>
         <BlackpaperPara indent>
-          The Supercycle captures three perfect alignments of these conditions across 19 months.
+          The Alpha Hybrid captures three perfect alignments of these conditions across 19 months.
         </BlackpaperPara>
       </BlackpaperSection>
 
       <BlackpaperSection label="II" color="rgba(255,255,255,0.4)">
         <BlackpaperHeading>The Prerequisite: Central Banks Must Lose Control</BlackpaperHeading>
         <BlackpaperPara>
-          You cannot have a Supercycle in a deflationary environment. The framework requires <em style={{ color: "rgba(255,255,255,0.8)" }}>expanding monetary conditions</em> —
+          You cannot have a Alpha Hybrid in a deflationary environment. The framework requires <em style={{ color: "rgba(255,255,255,0.8)" }}>expanding monetary conditions</em> —
           the market's unshakeable belief that central banks have peaked their tightening cycle and will return to easing.
         </BlackpaperPara>
         <BlackpaperPara indent>
@@ -2831,7 +2831,7 @@ function Blackpaper() {
         <BlackpaperPara indent>
           An investor who held through June "waiting for $1,000" would have capitulated in July at a 60% loss and missed the next three years
           of potential recovery. The framework requires <em style={{ color: "rgba(255,255,255,0.8)" }}>absolute exit discipline</em>.
-          Not because ZEC won't eventually recover. But because the 19-month Supercycle had ended. The rotational machinery had seized.
+          Not because ZEC won't eventually recover. But because the 19-month Alpha Hybrid had ended. The rotational machinery had seized.
         </BlackpaperPara>
         <BlackpaperQuote color="rgba(255,60,60,0.8)">
           Staying in ZEC past May 2026 was not "holding for upside." It was misunderstanding the framework entirely.
@@ -3388,7 +3388,7 @@ export default function LiquidityCascade() {
             WebkitTextFillColor: "transparent",
           }}
         >
-          Supercycle
+          Alpha Hybrid
         </h1>
         <p style={{ fontSize: 14, color: "rgba(255,255,255,0.45)", margin: "0 0 24px", maxWidth: 620, lineHeight: 1.55 }}>
           A chronological matrix for capital rotation across Solana, XRP, and Zcash — anchored to the Bitcoin halving as the definitive temporal fulcrum.

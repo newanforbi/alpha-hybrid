@@ -4,7 +4,7 @@
 
 ---
 
-A capital rotation dashboard tracking the **SOL → XRP → ZEC (W1) → ZEC (W2)** supercycle sequence — anchored to the April 2024 Bitcoin halving as the definitive temporal fulcrum.
+A capital rotation dashboard tracking the **SOL → XRP → ZEC (W1) → ZEC (W2)** sequence — anchored to the April 2024 Bitcoin halving as the definitive temporal fulcrum.
 
 ---
 
