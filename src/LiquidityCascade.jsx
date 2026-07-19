@@ -3385,7 +3385,6 @@ export default function LiquidityCascade() {
     <>
     <GalaxyBackground />
     <ShootingStars />
-    <AlienSaucer />
     <div style={{ minHeight: "100vh", background: "transparent", color: "#fff", fontFamily: "'DM Sans', sans-serif", position: "relative", zIndex: 2 }}>
       <div style={{ padding: "32px 28px 0", maxWidth: 960, margin: "0 auto" }}>
         <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.25)", letterSpacing: 2, marginBottom: 8 }}>
