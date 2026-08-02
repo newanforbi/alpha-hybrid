@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CYCLE_DATA, ALTCOIN_WINDOWS } from "../data/cycles.js";
 import { PHASES } from "../data/phases.js";
 import { GlowDot } from "../components/GlowDot.jsx";
+import { BlackpaperPara, BlackpaperQuote } from "../components/BlackpaperPrimitives.jsx";
 
 export function CyclesTab() {
   const [activeCycle, setActiveCycle] = useState(null);

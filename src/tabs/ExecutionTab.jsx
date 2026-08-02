@@ -195,10 +195,11 @@ export function ExecutionTab() {
           ))}
           {POSITION_SIZING.map((row) => {
             const BASE = 100000;
-            const tao  = parseFloat(row.solPct)  / 100;
-            const xrp  = parseFloat(row.xrpPct) / 100;
-            const zec  = parseFloat(row.zecPct)  / 100;
-            const terminal = BASE * sol * 19.66 * mstr * 3.51 * zec * 33.7;
+            const sol = parseFloat(row.solPct) / 100;
+            const xrp = parseFloat(row.xrpPct) / 100;
+            const zec = parseFloat(row.zecPct) / 100;
+            // Illustrative weighted path through framework multiples (SOL → XRP → ZEC W1)
+            const terminal = BASE * sol * 19.66 * xrp * 6.0 * zec * 33.67;
             return [row.tier, row.solPct, row.xrpPct, row.zecPct, formatCurrency(terminal), row.note].map((cell, j) => (
               <div key={`${row.tier}-${j}`} style={{
                 padding: "12px 12px",
@@ -230,7 +231,7 @@ export function ExecutionTab() {
         </div>
       </div>
       <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "rgba(255,255,255,0.2)", letterSpacing: 1, marginBottom: 36 }}>
-        ASSUMES $100K ENTRY — FULL 3-PHASE ROTATION AT HISTORICAL MULTIPLES (19.66x · 3.51x · 33.7x)
+        ASSUMES $100K ENTRY — ILLUSTRATIVE WEIGHTED PATH AT FRAMEWORK MULTIPLES (19.66x · 6.0x · 33.67x)
       </div>
 
       {/* Order Execution Steps */}
