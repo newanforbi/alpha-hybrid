@@ -1,4 +1,4 @@
-import { useMarketData, resolveSignalStatus } from "../hooks/useMarketData.js";
+import { useMarketData, resolveSignalStatus } from "../hooks/useMarketData.jsx";
 import { PHASES } from "../data/phases.js";
 import { SIGNAL_GRID, KEY_THRESHOLDS, PSY_RISKS, NEXT_CYCLE_FOCUS } from "../data/signals.js";
 import { GlowDot } from "../components/GlowDot.jsx";

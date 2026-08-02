@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useMarketData } from "./hooks/useMarketData.js";
+import { useMarketData } from "./hooks/useMarketData.jsx";
 import { PHASES } from "./data/phases.js";
 import { GalaxyBackground } from "./effects/GalaxyBackground.jsx";
 import { ShootingStars } from "./effects/ShootingStars.jsx";
@@ -41,11 +41,7 @@ function priceForPhase(phase, market) {
 export default function LiquidityCascade() {
   const [activePhase, setActivePhase] = useState(0);
   const [activeNav, setActiveNav] = useState("overview");
-  const [toolsOpen, setToolsOpen] = useState(false);
   const market = useMarketData();
-
-  const isSecondary = SECONDARY_NAV.some((n) => n.key === activeNav);
-  const secondaryLabel = SECONDARY_NAV.find((n) => n.key === activeNav)?.label;
 
   return (
     <>
@@ -125,13 +121,13 @@ export default function LiquidityCascade() {
           <nav aria-label="Dashboard sections">
             <div
               role="tablist"
+              aria-label="Primary"
               style={{
                 display: "flex",
+                flexWrap: "wrap",
                 gap: 4,
                 borderBottom: "1px solid rgba(255,255,255,0.06)",
-                marginBottom: 4,
-                overflowX: "auto",
-                scrollbarWidth: "none",
+                marginBottom: 0,
                 alignItems: "center",
               }}
             >
@@ -142,10 +138,7 @@ export default function LiquidityCascade() {
                   aria-selected={activeNav === n.key}
                   aria-controls={`panel-${n.key}`}
                   id={`tab-${n.key}`}
-                  onClick={() => {
-                    setActiveNav(n.key);
-                    setToolsOpen(false);
-                  }}
+                  onClick={() => setActiveNav(n.key)}
                   style={{
                     fontFamily: "'JetBrains Mono', monospace",
                     fontSize: 10,
@@ -162,71 +155,53 @@ export default function LiquidityCascade() {
                   {n.label}
                 </button>
               ))}
-
-              <div style={{ position: "relative", marginLeft: 4 }}>
+            </div>
+            <div
+              role="tablist"
+              aria-label="Tools"
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 2,
+                padding: "8px 0 4px",
+                alignItems: "center",
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: 9,
+                  letterSpacing: 1.5,
+                  color: "rgba(255,255,255,0.2)",
+                  marginRight: 6,
+                }}
+              >
+                MORE
+              </span>
+              {SECONDARY_NAV.map((n) => (
                 <button
-                  type="button"
-                  aria-expanded={toolsOpen || isSecondary}
-                  aria-haspopup="true"
-                  onClick={() => setToolsOpen((v) => !v)}
+                  key={n.key}
+                  role="tab"
+                  aria-selected={activeNav === n.key}
+                  aria-controls={`panel-${n.key}`}
+                  id={`tab-${n.key}`}
+                  onClick={() => setActiveNav(n.key)}
                   style={{
                     fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 10,
-                    letterSpacing: 1.5,
-                    padding: "8px 14px",
-                    background: "none",
+                    fontSize: 9,
+                    letterSpacing: 1.2,
+                    padding: "6px 10px",
+                    background: activeNav === n.key ? "rgba(255,255,255,0.05)" : "none",
                     border: "none",
-                    color: isSecondary ? "#fff" : "rgba(255,255,255,0.3)",
-                    borderBottom: isSecondary ? "2px solid #fff" : "2px solid transparent",
+                    borderRadius: 4,
+                    color: activeNav === n.key ? "#fff" : "rgba(255,255,255,0.28)",
                     cursor: "pointer",
+                    transition: "all 0.2s ease",
                   }}
                 >
-                  {isSecondary ? secondaryLabel : "MORE"} ▾
+                  {n.label}
                 </button>
-                {toolsOpen && (
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: "100%",
-                      left: 0,
-                      zIndex: 20,
-                      minWidth: 160,
-                      background: "#12141C",
-                      border: "1px solid rgba(255,255,255,0.1)",
-                      borderRadius: 8,
-                      padding: 6,
-                      boxShadow: "0 12px 40px rgba(0,0,0,0.45)",
-                    }}
-                  >
-                    {SECONDARY_NAV.map((n) => (
-                      <button
-                        key={n.key}
-                        type="button"
-                        onClick={() => {
-                          setActiveNav(n.key);
-                          setToolsOpen(false);
-                        }}
-                        style={{
-                          display: "block",
-                          width: "100%",
-                          textAlign: "left",
-                          fontFamily: "'JetBrains Mono', monospace",
-                          fontSize: 10,
-                          letterSpacing: 1.2,
-                          padding: "8px 10px",
-                          background: activeNav === n.key ? "rgba(255,255,255,0.06)" : "transparent",
-                          border: "none",
-                          borderRadius: 6,
-                          color: activeNav === n.key ? "#fff" : "rgba(255,255,255,0.45)",
-                          cursor: "pointer",
-                        }}
-                      >
-                        {n.label}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
+              ))}
             </div>
           </nav>
         </div>
@@ -234,9 +209,8 @@ export default function LiquidityCascade() {
         <main
           role="tabpanel"
           id={`panel-${activeNav}`}
-          aria-labelledby={`tab-${PRIMARY_NAV.some((n) => n.key === activeNav) ? activeNav : "overview"}`}
+          aria-labelledby={`tab-${activeNav}`}
           style={{ padding: "20px 28px 60px", maxWidth: 960, margin: "0 auto" }}
-          onClick={() => toolsOpen && setToolsOpen(false)}
         >
           {activeNav === "overview" && (
             <>
