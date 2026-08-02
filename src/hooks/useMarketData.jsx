@@ -87,26 +87,35 @@ async function loadMarketSnapshot() {
   if (sharedPromise) return sharedPromise;
 
   sharedPromise = (async () => {
-    const prices = await fetchJson(`${CG}/simple/price?ids=solana,ripple,zcash&vs_currencies=usd`);
-    await sleep(300);
-    const global = await fetchJson(`${CG}/global`);
-    await sleep(300);
-    const solChart = await fetchJson(`${CG}/coins/solana/market_chart?vs_currency=usd&days=365`);
-    await sleep(300);
-    const xrpChart = await fetchJson(`${CG}/coins/ripple/market_chart?vs_currency=usd&days=365`);
+    const warnings = [];
 
-    const solWeekly = weeklyClosesFromDaily(solChart.prices || []);
-    const xrpWeekly = weeklyClosesFromDaily(xrpChart.prices || []);
+    // Core metrics first — enough for honest watch UI even if RSI charts fail.
+    const prices = await fetchJson(`${CG}/simple/price?ids=solana,ripple,zcash&vs_currencies=usd`);
+    await sleep(400);
+    const global = await fetchJson(`${CG}/global`);
+
+    let solRsiWeekly = null;
+    let xrpRsiWeekly = null;
+    try {
+      await sleep(400);
+      const solChart = await fetchJson(`${CG}/coins/solana/market_chart?vs_currency=usd&days=365`, { retries: 1 });
+      solRsiWeekly = rsi(weeklyClosesFromDaily(solChart.prices || []), 14);
+      await sleep(400);
+      const xrpChart = await fetchJson(`${CG}/coins/ripple/market_chart?vs_currency=usd&days=365`, { retries: 1 });
+      xrpRsiWeekly = rsi(weeklyClosesFromDaily(xrpChart.prices || []), 14);
+    } catch (err) {
+      warnings.push(`RSI offline (${err.message || "chart fetch failed"})`);
+    }
 
     sharedCache = {
       solPrice: prices.solana?.usd ?? null,
       xrpPrice: prices.ripple?.usd ?? null,
       zecPrice: prices.zcash?.usd ?? null,
       btcDominance: global.data?.market_cap_percentage?.btc ?? null,
-      solRsiWeekly: rsi(solWeekly, 14),
-      xrpRsiWeekly: rsi(xrpWeekly, 14),
+      solRsiWeekly,
+      xrpRsiWeekly,
       loading: false,
-      error: null,
+      error: warnings.length ? warnings.join(" · ") : null,
       lastUpdated: new Date(),
       source: "CoinGecko",
     };
