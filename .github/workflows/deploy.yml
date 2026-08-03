@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - claude/liquidity-cascade-sol-xrp-zec-7k70cs
 
 permissions:
   contents: read
